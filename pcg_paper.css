@@ -6,61 +6,145 @@
    Case Problem 4
 
    Park City Gazette Style Sheet
-   Author: 
-   Date:   
+   Author: Maria De Jesus Rizo
+   Date:   10.29.18
 
    Filename:         pcg_paper.css
    Supporting Files: 
 
 */
 /* General Styles */
+/* The html selector states that the background of the entire HTML document will be the color specified by the background-color property. */
 html {
-    background-color: rgba(0, 0, 0, 0.589);
+    background-color: rgba(85, 57, 49, 0.507);
 }
 
+/* The body selector below states that the the margin of the body element will be set to auto on the left and the right, resulting in the centering of the body element. The max and min width properties specify the max and min sized viewports that the page will be displayed on using the styles specified on this css page. */
 body {
     margin-right: auto;
     margin-left: auto;
-    background-color: aliceblue;
+    background-color: rgb(241, 234, 234);
     max-width: 960px;
     min-width: 640px;
 }
 
+/* The selector below states that the img which is a child of the header which is a child of the body element will be affected. The width propert states that the width of the image will be 100% of the body element. The margin property states that the img will have no margin surrounding it. */
 body>header>img {
     width: 100%;
+    margin: 0px;
 }
 
+/* The selector states that the li nested within te nav nested within th body will be afected by the styles provided. The list style type property removes any styles from the nav lis which in this case would be the underline provided by the browser styles. */
 body nav li {
     list-style-type: none;
 }
 
+/* The ul selector states that the ul element in the HTML document will not have a margin surrounding it or a padding-inline-start. These properties wer added specifically to remove the browser styles added. */
+ul {
+    padding-inline-start: 0px;
+    margin: 0px;
+}
 
 /* Horizontal Navigation Styles */
+/* The .hnav a selector states that the a element within an element with .hnav will be affected. The float proerty specifies where the element should be floated on the page, in this case to the left. The display block element states that the element will have the properties of a block. The text align property aligns the content, in this case in the center. Padding top and padding bottom add a padding of 15px to the top and bottom of the element. The font size property specifies the size of the text in the element. */
 .hnav a {
+    background-color: rgba(85, 57, 49, 0.596);
     width: 12.5%;
     float: left;
     display: block;
     text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
 }
 
+/* The selectors below state that the a element nested within an element with the class of .hnav will be affected. The link and visited psuedo classes specify the states of the link that will be targeted. The color property specifies the text color of the element. */
+.hnav a:link,
+.hnav a:visited {
+    color: black;
+}
+/* The comment from above applied here, the only difference being the states are now hover and active. The text shadow property adds a shadow to the text of the specified units.  */
+.hnav a:hover,
+.hnav a:active {
+    background-color: rgba(85, 57, 49, 0.678);
+    text-shadow: 1px 1px 1px;
+}
 
+/* Side Navigation Styles */
+nav.sideNavigation {
+    background-color: rgba(85, 57, 49, 0.596);
+    margin: 10px;
+}
+
+nav.sideNavigation a {
+    color: black;
+    padding-left: 20px;
+    line-height: 2em;
+    padding-right: 20px;
+}
+
+nav.sideNavigation a:link,
+nav.sideNavigation a:visited {
+    color: black;
+}
+
+nav.sideNavigation a:hover,
+nav.sideNavigation a:active {
+    font-style: italic;
+}
 
 /* Heading Styles */
 h1,
 h3 {
     padding-left: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin-bottom: 10px;
 }
 
 /* Article Styles */
 article {
     padding-left: 20px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    font-size: 17px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-/* Aside Styles */
+section#marathon img {
+    padding-right: 15px;
+    padding-bottom: 5px;
+}
+
+section#marathon h1,
+section#marathon article {
+    padding-left: 0px;
+
+}
+
+/* Ordered List Styles */
+ol>li {
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 35px;
+    margin-right: 15px;
+}
+
 /* Vertical Navigation Styles */
-/* Footer Styles */
 footer {
-    background-color: black;
+}
+
+footer>nav.verticalNavigation {
+    padding-left: 1em;
+    text-align: left;
+}
+
+footer nav.verticalNavigation a:link,
+footer nav.verticalNavigation a:visited {
+    color: black;
+}
+
+footer nav.verticalNavigation a:hover,
+footer nav.verticalNavigation a:active {
+    text-shadow: 1px 1px 1px;
 }

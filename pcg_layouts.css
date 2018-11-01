@@ -12,71 +12,75 @@
     Filename: pcg_front.html
  */
 
-
-/* Structural Styles */
-article,
-aside,
-figcaption,
-figure,
-footer,
-main,
-nav,
-section {
-    display: block;
+/* Grid Row Styles */
+/* The selector states that any div with a class of row within the HTML document will not be affected by any floating elements that many have come before it. */
+div.row {
+    clear: both;
+}
+/* The below selector states that the div with a class of row will be affected. The after psuedo element allows for content to be added after the main content. In this case, the selector and properties are being used in order to prevent container collapse within each class row element.  */
+div.row::after {
+    clear: both;
+    content: "";
+    display: table;
 }
 
+/* Grid Column Styles */
+/*  */
+div[class^="col-"] {
+    float: left;
 
-/* Typographic Styles */
-address,
-article,
-aside,
-blockquote,
-body,
-cite,
-div,
-dl,
-dt,
-dd,
-em,
-figcaption,
-figure,
-footer,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-html,
-img,
-li,
-main,
-nav,
-ol,
-p,
-section,
-span,
-ul {
-    background: transparent;
-    font-size: 100%;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
 
-nav ul {
-    list-style: none;
-    list-style-image: none;
+div.col-1-1 {
+    width: 100%;
 }
 
-nav a {
-    text-decoration: none;
+div.col-1-3 {
+    width: 33.33%;
 }
 
-body {
-    line-height: 1;
+div.col-3-10 {
+    width: 30%;
+}
+
+div.col-7-10 {
+    width: 70%;
+}
+
+div.col-2-5 {
+    width: 40%;
+}
+
+div.col-3-5 {
+    width: 60%;
+}
+
+/* Side Navigation Styles */
+nav.sideNavigation {
+    clear: both;
+    float: left;
+
+}
+
+/* Section ID Marathon Styles */
+section#marathon {
+    clear: left;
+    float: left;
+    padding: 20px;
+}
+
+section#marathon img {
+    clear: both;
+    float: left;
+}
+
+/* Footer Vertical Navigation Styles */
+footer {
+    background-color: aquamarine;
+}
+
+footer nav.verticalNavigation {
+    background-color: aquamarine;
+    float: left;
+    width: 20%;
 }
