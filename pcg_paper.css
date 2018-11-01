@@ -13,6 +13,7 @@
    Supporting Files: 
 
 */
+/* General Styles */
 html {
     background-color: rgba(0, 0, 0, 0.589);
 }
@@ -25,11 +26,41 @@ body {
     min-width: 640px;
 }
 
-body>nav li {
+body>header>img {
+    width: 100%;
+}
+
+body nav li {
     list-style-type: none;
 }
 
-nav.horizontal li {
-    display: table;
-    width: 100%;
+
+/* Horizontal Navigation Styles */
+.hnav a {
+    width: 12.5%;
+    float: left;
+    display: block;
+    text-align: center;
+}
+
+
+
+/* Heading Styles */
+h1,
+h3 {
+    padding-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/* Article Styles */
+article {
+    padding-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/* Aside Styles */
+/* Vertical Navigation Styles */
+/* Footer Styles */
+footer {
+    background-color: black;
 }
