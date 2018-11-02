@@ -9,14 +9,16 @@
    Author: Maria De Jesus Rizo
    Date:   10.29.18
 
-   Filename:         pcg_paper.css
+   Filename: pcg_paper.css
    Supporting Files: 
 
 */
 /* General Styles */
-/* The html selector states that the background of the entire HTML document will be the color specified by the background-color property. */
+/* Styles within this section will affect the general elements of the page. */
+/* The html selector states that the background of the entire HTML document will be the color specified by the background-color property. The height property states that the html element will be the height of 100% of the page */
 html {
     background-color: rgba(85, 57, 49, 0.507);
+    height: 100%;
 }
 
 /* The body selector below states that the the margin of the body element will be set to auto on the left and the right, resulting in the centering of the body element. The max and min width properties specify the max and min sized viewports that the page will be displayed on using the styles specified on this css page. */
@@ -26,6 +28,7 @@ body {
     background-color: rgb(241, 234, 234);
     max-width: 960px;
     min-width: 640px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* The selector below states that the img which is a child of the header which is a child of the body element will be affected. The width propert states that the width of the image will be 100% of the body element. The margin property states that the img will have no margin surrounding it. */
@@ -39,13 +42,14 @@ body nav li {
     list-style-type: none;
 }
 
-/* The ul selector states that the ul element in the HTML document will not have a margin surrounding it or a padding-inline-start. These properties wer added specifically to remove the browser styles added. */
+/* The ul selector states that the ul element in the HTML document will not have a margin surrounding it or a padding-inline-start. These properties were added specifically to remove the browser styles added automatically to the page. */
 ul {
     padding-inline-start: 0px;
     margin: 0px;
 }
 
 /* Horizontal Navigation Styles */
+/* Styles within this section will affect the horizontal navigation in the HTML document. */
 /* The .hnav a selector states that the a element within an element with .hnav will be affected. The float proerty specifies where the element should be floated on the page, in this case to the left. The display block element states that the element will have the properties of a block. The text align property aligns the content, in this case in the center. Padding top and padding bottom add a padding of 15px to the top and bottom of the element. The font size property specifies the size of the text in the element. */
 .hnav a {
     background-color: rgba(85, 57, 49, 0.596);
@@ -63,88 +67,136 @@ ul {
 .hnav a:visited {
     color: black;
 }
-/* The comment from above applied here, the only difference being the states are now hover and active. The text shadow property adds a shadow to the text of the specified units.  */
+
+/* The comment from above applied here, the only difference being the states are now hover and active. The font size property specifies a style that should ba added to the text. In this case the text becomes italics. */
 .hnav a:hover,
 .hnav a:active {
     background-color: rgba(85, 57, 49, 0.678);
-    text-shadow: 1px 1px 1px;
+    font-style: italic;
 }
 
 /* Side Navigation Styles */
+/* Styles within this section will affect the side navigation in the HTML document. */
+/* Styles within this section will be applied to the nav element in the HTML document with a class of sideNavigation. The margin top and left properties add a megin in te specified areas and fo the specified size onto the element. The padding property adds a padding of the specified size all around the element. */
 nav.sideNavigation {
-    background-color: rgba(85, 57, 49, 0.596);
-    margin: 10px;
+    background-color: rgba(85, 57, 49, 0.171);
+    margin-top: 25px;
+    margin-left: 20px;
+    padding: 10px;
 }
 
+/* The selector below states that the a element nested within th nav element with a class of sideNavigation will be affected by the styles withi. The line height property specifies the height of each line of text in the element. */
 nav.sideNavigation a {
     color: black;
     padding-left: 20px;
-    line-height: 2em;
     padding-right: 20px;
+    line-height: 2em;
+
 }
 
+/* Te selector below states that the a element nested within the nav,sideNavigation element will be affected in the states of link or visited which are specifies by the pseudo classes. */
 nav.sideNavigation a:link,
 nav.sideNavigation a:visited {
     color: black;
 }
 
+/* The comment above can also be applied here, the only difference being the states that are affected. This time the pseudo classes are specifying the states of hover and active to be affected by the styles. */
 nav.sideNavigation a:hover,
 nav.sideNavigation a:active {
     font-style: italic;
 }
 
 /* Heading Styles */
-h1,
-h3 {
+/* Styles within this section will be affect the heading elements within the HTML document. */
+/* The h1 selector states that the properties within will be applied to the h1 elements in the HTML document. */
+h1 {
     padding-left: 20px;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 25px;
     margin-bottom: 10px;
 }
 
 /* Article Styles */
+/* Styles within this section will affect the article elements within the HTML document. */
+/* Styles listed within this selector will affect the article element. */
 article {
     padding-left: 20px;
     padding-right: 15px;
     padding-bottom: 10px;
-    font-size: 17px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    line-height: 20px;
 }
 
+/* The selector below states that listed styles will be applied to the p elements that are nested within the article element.  */
+article p {
+    font-size: 18px;
+}
+
+/* The selector below states that the section with an id of marathon will be affected by the styles within. */
+section#marathon {
+    padding: 20px;
+}
+
+/* The selector states that the img element nested within the section element with an id of marathon will be affected by the styles listed. */
 section#marathon img {
-    padding-right: 15px;
-    padding-bottom: 5px;
+    padding: 5px 15px 5px 5px;
 }
 
+/* The selector states that the h1 and article elements nested within the section element with an id of marathon will be affected by the styles written.  */
 section#marathon h1,
 section#marathon article {
     padding-left: 0px;
 
 }
 
+
 /* Ordered List Styles */
-ol>li {
-    font-size: 17px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 35px;
-    margin-right: 15px;
+/* Styles within this section will affect the ordered lists within the HTML document. */
+/* The ol li selector states that all properties listed will affect the li elements nested within the ol elements in the HTML document */
+ol li {
+    font-size: 18px;
+    margin-left: 30px;
+    margin-top: 5px;
+    line-height: 20px;
+}
+
+/* The selector states that the section element with an id of list will be affected.  */
+section#list {
+    background-color: rgba(85, 57, 49, 0.171);
+    padding: 15px;
+    margin-right: 20px;
 }
 
 /* Vertical Navigation Styles */
+/* The selector below states that listd properties will be applied to the footer element in the HTML document. */
 footer {
+    background-color: rgba(85, 57, 49, 0.596);
+    margin-top: 10px;
 }
 
-footer>nav.verticalNavigation {
-    padding-left: 1em;
-    text-align: left;
+/* The footer ul selector states that the ul nested within the footer will have the listed styles applied to it. */
+footer ul {
+    padding-left: 30px;
 }
 
+/* The footer li selector states that the li nested within the footer element will be affected by the listed properties.  */
+footer li {
+    margin: 10px;
+
+}
+
+/* The selector below states that the first li elements within the footer will be affect by the styles listed. The font weight property specifies the wieght of the font, in this case making the font of the selected element bold. */
+footer li:first-of-type {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* The selector states that a elements nested within the nav element with a class of varticlaNavigation that is nested within the footer element will be affected in the states of link and visited as specified by the psuedo elements.  */
 footer nav.verticalNavigation a:link,
 footer nav.verticalNavigation a:visited {
     color: black;
 }
 
+/* The comment from above applied to this selector as well, the only difference being the states of the a element that are being affected.  */
 footer nav.verticalNavigation a:hover,
 footer nav.verticalNavigation a:active {
-    text-shadow: 1px 1px 1px;
+    font-style: italic;
 }

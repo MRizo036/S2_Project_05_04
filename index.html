@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Beginning of document. -->
 <html>
 
 <head>
@@ -13,7 +14,7 @@
 
     Filename: index.html
    -->
-
+    <!-- The link tags listed below link the specified style sheets to the HTML document allowing them to style the page and layout.  -->
     <meta charset="UTF-8" />
     <title>Park City Gazette</title>
     <link rel="stylesheet" href="resets.css">
@@ -21,11 +22,17 @@
     <link rel="stylesheet" href="pcg_paper.css">
 
 </head>
+<!-- Beggining of content visible to the users on the webpage. -->
 
 <body>
     <header>
+        <!-- The img element adds an img into the document. This particular image serves as the banner of the webpage. -->
         <img src="pcglogo.jpg" alt="Park City Gazette logo">
+        <!-- The div element followed by a class allows for certain sections of a webpage to be styles in a specific way while not affecting the rest of the page elements. It will also not affect any of the content displayed onto the page. -->
+        <!-- Beginning of class 'hnav' -->
         <div class="hnav">
+            <!-- The navigation is a set of li with a elements nested within which allow the user to navigate from page to page within the browser. Since their is only one HTML document within this website, '#' are placed where the name of another document would typically be placed. -->
+            <!-- Beginning of main horizontal navigation. -->
             <nav>
                 <ul>
                     <li>
@@ -53,13 +60,18 @@
                         <a href="#">Weather</a>
                     </li>
                 </ul>
+                 <!-- End of main horizontal navigation. -->
             </nav>
+            <!-- End of class 'hnav' -->
         </div>
     </header>
     <!-- 1st Row -->
+    <!-- Beginning of class row. -->
     <div class="row">
-        <!-- 1nd Column -->
+        <!-- 1st Column -->
+        <!-- Beginning of class col-3-10 -->
         <div class=col-3-10>
+            <!-- Beginning of nav with a class of sideNavigation. -->
             <nav class="sideNavigation">
                 <ul>
                     <li>
@@ -94,98 +106,101 @@
                     </li>
 
                 </ul>
+                <!-- End of nav with a class of sideNavigation. -->
             </nav>
+            <!-- End of class col-3-10 -->
         </div>
-
         <!-- 2nd Column -->
+        <!-- Beginning of class col-7-10 -->
         <div class="col-7-10">
+            <!-- Beginning of section with id of marathon -->
             <section id="marathon">
                 <h1>Local Woman Wins Marathon </h1>
                 <img src="blake.jpg" alt="woman">
-                <article>Estes Park native Laura Blake won the 27th Front Range Marathon over an elite field of the
-                    best
-                    long-distance
-                    runners in the country. Laura's time of 2 hr. 28 min. 21 sec. was only 2 minutes off the women's
-                    course record
-                    set
-                    last year by Sarah Rawlings. Kathy Lasker and Lisa Peterson finished second and third,
-                    respectively. Laura's
-                    victory came on the heels of her performance at the NCAA Track and Field Championships, in which
-                    she placed
-                    second
-                    running for Colorado State.
-                    <br>
-                    In an exciting race, Peter Teagan of San Antonio, Texas, used a finishing kick to win the men's
-                    marathon for
-                    the
-                    second straight year, in a time of 2 hr. 12 min. 34 sec. Ahead for much of the race, Kyle Wills of
-                    Billings,
-                    Montana, finished second when he could not match Teagan's finishing pace. Jason Wu of Boulder,
-                    Colorado, placed
-                    third in a very competitive field.
-                    <br>
-                    This year's race through downtown Boulder boasted the largest field in the marathon's history, with
-                    over 9500
-                    men
-                    and 6700 women competing. Race conditions were perfect with low humidity and temperatures that
-                    never exceeded
-                    85
-                    degrees.</article>
+                <!-- The article element marks a main section of text on the webpage. -->
+                <article>
+                    <!-- The p element marks a paragraoh within the document. -->
+                    <p>
+                        Estes Park native Laura Blake won the 27th Front Range Marathon over an elite field of the
+                        best
+                        long-distance
+                        runners in the country. Laura's time of 2 hr. 28 min. 21 sec. was only 2 minutes off the
+                        women's
+                        course record
+                        set
+                        last year by Sarah Rawlings. Kathy Lasker and Lisa Peterson finished second and third,
+                        respectively. Laura's
+                        victory came on the heels of her performance at the NCAA Track and Field Championships, in
+                        which
+                        she placed
+                        second
+                        running for Colorado State.
+                    </p>
+                    <p>
+                        In an exciting race, Peter Teagan of San Antonio, Texas, used a finishing kick to win the men's
+                        marathon for
+                        the
+                        second straight year, in a time of 2 hr. 12 min. 34 sec. Ahead for much of the race, Kyle Wills
+                        of
+                        Billings,
+                        Montana, finished second when he could not match Teagan's finishing pace. Jason Wu of Boulder,
+                        Colorado, placed
+                        third in a very competitive field.
+                    </p>
+                    <p>This year's race through downtown Boulder boasted the largest field in the marathon's history,
+                        with
+                        over 9500
+                        men
+                        and 6700 women competing. Race conditions were perfect with low humidity and temperatures that
+                        never exceeded
+                        85
+                        degrees.</p>
+                </article>
+                <!-- End of section with id of marathon -->
             </section>
-
+            <!-- End of class col-7-10 -->
         </div>
-
+        <!-- End of class row. -->
     </div>
-
-    <!-- 2nd Row -->
+    <!-- 2rd Row -->
+    <!-- Beginning of class row. -->
     <div class="row">
         <!-- 1st Column -->
-        <div class="col-1-1">
-            <h1>Highway 7 Reopens</h1>
+        <!-- Beginning of class col-3-5 -->
+        <div class="col-3-5">
+            <h1>Cougar Sightings Increase </h1>
             <article>
-                Highway 7 will reopen this Friday, June 3rd, after a final safety inspection. A late blizzard delayed
-                road
-                crews,
-                marking this as one of the latest dates on record for the highway's reopening.
-
-                Rising to an elevation of over 12,000 feet, Highway 7 is a main link between Estes Park and Grand Lake.
-                The
-                reopening of the road is one of the annual signs that summer is near and the tourist season will soon
-                be upon
-                us!
-            </article>
-        </div>
-        <!-- 3rd Row -->
-        <div class="row">
-            <!-- 1st Column -->
-            <div class="col-3-5">
-                <h1>Cougar Sightings Increase </h1>
-                <article>
+                <p>
                     Cougar sightings have increased 40% in the Este Park area according to a report released yesterday
                     by the state
                     DNR. In the last month alone, there were ten sightings in Estes Park and the surrounding
                     communities of Grand
                     Lake
                     and Pinewood Springs. This compares to only twelve sightings for the entire spring of last year.
-                    <br>
+                </p>
+                <p>
                     Reasons for the growing number of cougar sightings include increasing encroachment by people into
                     former
                     wildlife
                     habitats and new wildlife regulations that result in decreasing numbers of elk and deer being taken
                     by hunters.
                     Cougars may be wandering into developed areas, following the herds.
-                    <br>
-                    DNR spokesman Steve Tasker asks residents to call the DNR report line at 555-6981 if they believe
+                </p>
+                <p>DNR spokesman Steve Tasker asks residents to call the DNR report line at 555-6981 if they believe
                     they have
                     seen a
                     cougar or any large predatory animal. Two fatalities have already occurred in the west this year
                     from cougar
-                    attacks.
-                </article>
-            </div>
-            <!-- 2nd Column -->
-            <div class="col-2-5">
-                <h3>If You Encounter a Cougar </h3>
+                    attacks.</p>
+            </article>
+            <!-- End of class col-3-5. -->
+        </div>
+        <!-- 3rd Column -->
+        <!-- Beginning of class col-2-5. -->
+        <div class="col-2-5">
+            <!-- Beginning of section with an id of list. -->
+            <section id="list">
+                <h1>If You Encounter a Cougar </h1>
                 <ol>
                     <li>Stop, stand tall, and don't run. A cougar's instinct is to chase.</li>
                     <li>Try to appear larger than the cougar by raising your arms.</li>
@@ -195,85 +210,132 @@
                         prey, but a potential danger.</li>
                     <li>In case of an attack, stay on your feet and fight back aggressively. </li>
                 </ol>
-            </div>
+                 <!-- End of section with an id of list. -->
+            </section>
+            <!-- End of class col-2-5. -->
         </div>
-        <!-- 4th Row -->
+        <!-- End of class row. -->
+    </div>
+    <!-- 3rd Row -->
+    <!-- Beginning of class row. -->
+    <div class="row">
+        <!-- 1st Column -->
+        <!-- Beginning of class col-1-1. -->
+        <div class="col-1-1">
+            <h1>Highway 7 Reopens</h1>
+            <article>
+                <p>
+                    Highway 7 will reopen this Friday, June 3rd, after a final safety inspection. A late blizzard
+                    delayed
+                    road
+                    crews,
+                    marking this as one of the latest dates on record for the highway's reopening.
+
+                    Rising to an elevation of over 12,000 feet, Highway 7 is a main link between Estes Park and Grand
+                    Lake.
+                    The
+                    reopening of the road is one of the annual signs that summer is near and the tourist season will
+                    soon
+                    be upon
+                    us!
+                </p>
+            </article>
+            <!-- End of class col-1-1. -->
+        </div>
+        <!-- End of class row. -->
+    </div>
+    <!-- 4th Row -->
+    <footer>
+        <!-- Beginning of class row. -->
         <div class="row">
-            <footer>
-                <!-- 1st Column -->
-                <div class="col-1-3">
-                    <nav class="verticalNavigation">
-                        <ul>
-                            <li>
-                                <a href="#">Classifieds</a>
-                            </li>
-                            <li>
-                                <a href="#">For Sale</a>
-                            </li>
-                            <li>
-                                <a href="#">Wanted</a>
-                            </li>
-                            <li>
-                                <a href="#">Employment</a>
-                            </li>
-                            <li>
-                                <a href="#">Real Estate</a>
-                            </li>
-                            <li>
-                                <a href="#">Personal </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <!-- 2nd Column -->
-                <div class="col-1-3">
-                    <nav class="verticalNavigation">
-                        <ul>
-                            <li>
-                                <a href="#">Tourism</a>
-                            </li>
-                            <li>
-                                <a href="#">Attractions</a>
-                            </li>
-                            <li>
-                                <a href="#">Events</a>
-                            </li>
-                            <li>
-                                <a href="#">Parks</a>
-                            </li>
-                            <li>
-                                <a href="#">Camping </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <!-- 3rd Column -->
-                <div class="col-1-3">
-                    <nav class="verticalNavigation">
-                        <ul>
-                            <li>
-                                <a href="#">Subscriptions</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact Us</a>
-                            </li>
-                            <li>
-                                <address>
-                                    Park City Gazette
-                                    801 Elkhart Avenue
-                                    Estes Park, CO 80511
-                                    1 (800) 555-2918
-                                </address>
-                            </li>
-                        </ul>
-                    </nav>
 
+            <!-- 1st Column -->
+            <!-- Beginning of class col-1-3. -->
+            <div class="col-1-3">
+                <!-- Beginning of nav with a class of verticalNavigation. -->
+                <nav class="verticalNavigation">
+                    <ul>
+                        <li>
+                            <a href="#">Classifieds</a>
+                        </li>
+                        <li>
+                            <a href="#">For Sale</a>
+                        </li>
+                        <li>
+                            <a href="#">Wanted</a>
+                        </li>
+                        <li>
+                            <a href="#">Employment</a>
+                        </li>
+                        <li>
+                            <a href="#">Real Estate</a>
+                        </li>
+                        <li>
+                            <a href="#">Personal </a>
+                        </li>
+                    </ul>
+                    <!-- End of nav with a class of verticalNavigation. -->
+                </nav>
+                <!-- End of class col-1-3. -->
+            </div>
+            <!-- 2nd Column -->
+            <!-- Beginning of class col-1-3. -->
+            <div class="col-1-3">
+                <!-- Beginning of nav with a class of verticalNavigation. -->
+                <nav class="verticalNavigation">
+                    <ul>
+                        <li>
+                            <a href="#">Tourism</a>
+                        </li>
+                        <li>
+                            <a href="#">Attractions</a>
+                        </li>
+                        <li>
+                            <a href="#">Events</a>
+                        </li>
+                        <li>
+                            <a href="#">Parks</a>
+                        </li>
+                        <li>
+                            <a href="#">Camping </a>
+                        </li>
+                    </ul>
+                    <!-- End of nav with a class of verticalNavigation. -->
+                </nav>
+                <!-- End of class col-1-3. -->
+            </div>
+            <!-- 3rd Column -->
+            <!-- Beginning of class col-1-3. -->
+            <div class="col-1-3">
+                <!-- Beginning of nav with a class of verticalNavigation. -->
+                <nav class="verticalNavigation">
+                    <ul>
+                        <li>
+                            <a href="#">Subscriptions</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <!-- The address element is used to add a certain adress onto a webpage, the contents within being made italic unless specified otherwise in the CSS styles. -->
+                            <address>
+                                Park City Gazette <br>
+                                801 Elkhart Avenue <br>
+                                Estes Park, CO 80511 <br>
+                                1 (800) 555-2918 <br>
+                            </address>
 
-                </div>
-
-            </footer>
+                        </li>
+                    </ul>
+                    <!-- End of nav with a class of verticalNavigation. -->
+                </nav>
+                <!-- End of class col-1-3. -->
+            </div>
+            <!-- End of class row. -->
         </div>
-
+    </footer>
+    <!-- End of content visible to the user on the webpage. -->
 </body>
+<!-- End of document. -->
 
 </html>

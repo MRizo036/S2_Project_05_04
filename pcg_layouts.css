@@ -9,14 +9,16 @@
     Author: Maria De Jesus Rizo
     Date:   10.29.18
 
-    Filename: pcg_front.html
+    Filename: pcg_layouts.html
  */
 
 /* Grid Row Styles */
+/* Styles within this section will affect the grid rows of the page layout. */
 /* The selector states that any div with a class of row within the HTML document will not be affected by any floating elements that many have come before it. */
 div.row {
     clear: both;
 }
+
 /* The below selector states that the div with a class of row will be affected. The after psuedo element allows for content to be added after the main content. In this case, the selector and properties are being used in order to prevent container collapse within each class row element.  */
 div.row::after {
     clear: both;
@@ -25,16 +27,19 @@ div.row::after {
 }
 
 /* Grid Column Styles */
-/*  */
+/* Styles within this section will affect the grid columns of the page layout. */
+/* The selector states that all divs wih classes begining with 'col-' will be affected. The float left property floats these elements to the left. */
 div[class^="col-"] {
     float: left;
 
 }
 
+/* The selector states that the div with a class of col-1-1. The width property specifies the width of the element on the page.  */
 div.col-1-1 {
     width: 100%;
 }
 
+/* The comment from above applies to the rest of the styles in this section, the only difference being the class being affected and the width being applied. */
 div.col-1-3 {
     width: 33.33%;
 }
@@ -56,6 +61,8 @@ div.col-3-5 {
 }
 
 /* Side Navigation Styles */
+/* Styles within this section will affect the layout of the side navigation in the HTML document. */
+/* The selector states that the nav element with a class of sideNavigation will be affected by the styles listed within. */
 nav.sideNavigation {
     clear: both;
     float: left;
@@ -63,24 +70,24 @@ nav.sideNavigation {
 }
 
 /* Section ID Marathon Styles */
+/* Styles within this section will affect the layout of the section with an id of marathon in the HTML document. */
+/* The selector states that the section element with an id of marathon will be affected by the styles within. The clear left property clears the element of any content to the left of it. */
 section#marathon {
     clear: left;
     float: left;
-    padding: 20px;
 }
 
+/* The selector states that the img element nested within the setion element with an id of marathon will be affected by the styles listed. */
 section#marathon img {
     clear: both;
     float: left;
 }
 
 /* Footer Vertical Navigation Styles */
-footer {
-    background-color: aquamarine;
-}
-
+/* Styles within this section will affect the layout of  the nav with a class of verticalNavigation nested within the footer. */
+/* The selector states that the listed styles will be applied to the nav element with a class of verticalNavigation nested within the footer. */
 footer nav.verticalNavigation {
-    background-color: aquamarine;
     float: left;
-    width: 20%;
+    width: 100%;
+    height: 100%;
 }
